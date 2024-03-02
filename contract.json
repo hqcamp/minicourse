@@ -1,4 +1,4 @@
-GET /api/v1/catalog/user-products/
+GET /api/v1/catalog/products/my/
 
 RESPONSE
 200
