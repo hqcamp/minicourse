@@ -1,1 +1,19 @@
-
+GET /api/v1/catalog/products/my/
+RESPONSE
+200
+{
+    "count": int,
+    "next": url | null,
+    "previous": url | null,
+    "results": [
+        {
+            "id": int,
+            "title": str,
+            "teacher_name": str,
+            "teacher_avatar": str,
+            "lessons_count": int,
+            "completed_lessons_count": int,
+            "closest_lesson_date": date | None,
+        },
+    ]
+}
