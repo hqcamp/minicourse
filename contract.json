@@ -1,4 +1,5 @@
 GET /api/v1/catalog/products/my/
+
 RESPONSE
 200
 {
@@ -9,8 +10,11 @@ RESPONSE
         {
             "id": int,
             "title": str,
-            "teacher_name": str,
-            "teacher_avatar": str,
+            "teacher": {
+                "id": int,
+                "full_name": str,
+                "avatar_url": url
+            },
             "lessons_count": int,
             "completed_lessons_count": int,
             "closest_lesson_date": date | None,
